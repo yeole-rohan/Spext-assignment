@@ -1,0 +1,153 @@
+body{background-color: #E2DDFF; font-family: 'Roboto', sans-serif;font-weight: 400;}
+.song-wrap{background-color:#F8F8F8;border: 1px solid #FFFFFF;box-shadow: 40px 30px 80px rgba(54, 48, 116, 0.3);border-radius: 60px;width: 500px;max-width: 100%;padding: 70px 50px;position: absolute;top: 50%;transform: translateY(-50%);}
+.song-wrap .song-banner{border-radius: 40px;background-color: #F8F8F8;padding: 15px;box-shadow: -10px -10px 15px #FFF, 10px 10px 10px rgba(0, 0, 0, 0.05), inset 10px 10px 10px rgba(0, 0, 0, 0.05), inset -10px -10px 20px #FFF;}
+.song-wrap .song-details{padding-left: 25px;}
+.d-inline-block{display: inline-block;}
+.v-middle{vertical-align: middle;}
+.song-wrap .song-banner img{border-radius: 40px;width: 200px;box-shadow: 7px 10px 10px 0px #0000004f;}
+.font-18{font-size: 14px;line-height: 20px;}
+.font-32{font-size: 20px;
+  line-height: 26px;}
+.font-22{font-size: 16px;line-height: 22px;}
+.now-playing{text-shadow: 1px 1px 1px #FFFFFF;}
+.t-color{color: #AEAEAE;}
+.weight-700{font-weight: 700;}
+.weight-900{font-weight: 900;}
+.img-fluid{width: 100%;height: auto;}
+.user-btns > div{box-shadow: -10px -10px 15px #FFF, 10px 10px 10px rgba(0, 0, 0, 0.05), inset 10px 10px 10px rgba(0, 0, 0, 0.05), inset -10px -10px 20px #FFF;padding: 15px;border-radius: 100%;height: 15px;width: 15px; cursor: pointer;}
+.user-btns > div:hover{
+  opacity: 0.3;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.user-btns > div:active, .prev:active, .next:active, .pause:active {
+  opacity: 1;
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+    inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+  color: #79e3b6;
+}
+.back:hover {
+  opacity: 1;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
+    6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+.play, .prev,.next{box-shadow: -10px -10px 15px #FFFFFF, 10px 10px 10px rgba(0, 0, 0, 0.05), inset 10px 10px 10px rgba(0, 0, 0, 0.05), inset -10px -10px 20px #FFFFFF;border-radius: 100%;}
+.user-btns>div:nth-child(2){margin: 0 23px;}
+.song-details-text *{color: #86748D;}
+.song-details-text .singer{padding: 5px 0;}
+.song-details-text{margin: 35px 0;}
+.w-100{width: 100%;}
+.text-left{text-align: left;}
+.album, .singer{opacity: 0.5}
+.text-right{text-align: right;}
+.start{float: left;}
+.back{background: #F8F8F84A;border-radius: 100%;padding: 9px;cursor: pointer;}
+.wrap{background: linear-gradient(327.56deg, #5D24D6 19.23%, #7E74ED 76%);box-shadow: inset 10px 10px 15px rgba(255, 255, 255, 0.2);filter: drop-shadow(0px 5px 10px rgba(55, 46, 152, 0.2));border-radius: 100%;padding: 5px 12px;}
+.end{float: right;}
+.pause{padding: 15px 20px;}
+.progress-bar{box-shadow: -3px -3px 5px #FFFFFF, 3px 3px 5px rgba(0, 0, 0, 0.05), inset 3px 3px 5px rgba(0, 0, 0, 0.05), inset -3px -3px 5px #FFFFFF;border-radius: 37px;background: #DEDDE3;height: 17px;}
+input[type="range"]{
+    -webkit-appearance: none;
+    height: 9px;
+    outline: none !important;
+    appearance:none;
+    border:none;
+    border-radius: 31px;
+    margin: 0 auto 4px 5px;
+    width: 99%;
+    background-color: transparent;
+}
+.outer-wrap{position: relative;margin: 200px 100px;}
+.time{margin-top: 30px;margin-bottom: 50px;}
+.play-pause{margin-bottom: 40px;text-align: center;margin-top: 20px;}
+.play{margin: 0 30px;}
+    input[type='range']::-moz-range-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 30px;
+        height: 28px;
+        border-radius: 31px;
+        border: 0;
+        cursor: pointer;
+        background: url(./range.png) top no-repeat;
+        padding: 10px 5px 5px 5px;
+        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+    }
+    input[type="range"]::-moz-range-progress {
+      background: linear-gradient(327.56deg, #5D24D6 19.23%, #7E74ED 81.76%);
+      /* box-shadow: 0px 2px 3px rgba(43, 72, 180, 0.4); */
+      height: 100%;
+      border-radius:30px;
+      border:none;
+    }
+    input[type='range']::-moz-range-track {
+        -webkit-appearance: none;
+        box-shadow: none;
+        padding: 2px;
+        border: none;
+        border-radius: 31px;
+        background-color: transparent;
+      }input[type="range"]::-ms-track {
+        -webkit-appearance: none;
+        box-shadow: none;
+        border: none;
+        background: transparent;
+        
+      }
+      input[type="range"]::-webkit-thumb {
+        -webkit-appearance: none;
+        background: transparent;
+      }
+      input[type='range']::-webkit-runnable-track  {
+        -webkit-appearance: none;
+        box-shadow: none;
+        border: none;
+
+        background: transparent;
+      }
+.time{clear: both;}
+.next-prev-play{margin: 0 55px;}
+.forward{margin-right: 30px;}
+.two{margin-left: 30px;}
+.song-controls{background: #F7F7F7;border: 1px solid #FFFFFF;    box-shadow: 0px 60px 100px rgba(65, 44, 100, 0.3);border-radius: 60px;padding: 40px 50px 40px 40px;margin: 42px 0; }
+.song-controls-wrap{margin-left: 640px;}
+@media screen and (max-width: 1510px) {
+  .song-controls-wrap{margin-left: 550px;}
+  .next-prev-play{margin: 0 30px;}
+  .outer-wrap{margin: 200px 10px;}
+  .song-wrap{padding: 70px 20px;}
+  .forward{margin-right: 15px;}
+  .two{margin-left: 15px;}
+}
+@media screen and (max-width: 1150px) {
+  .song-wrap{ position: relative;
+top: auto;box-shadow: none;
+transform: none;}
+.song-controls{margin-top: 10px;}
+.song-controls-wrap{margin-left: 0;}
+.forward{margin-right: 50px;}
+.next-prev-play{margin: 0 100px;}
+.two{margin-left: 50px;}
+}
+@media screen and (max-width: 767px) {
+.forward{margin-right: 15px;}
+.next-prev-play{margin: 0 50px;}
+.outer-wrap{margin: 50px 10px;}
+.two{margin-left: 15px;}
+}
+@media screen and (max-width: 650px) {
+  .song-wrap,.song-controls{padding: 20px;width: auto;}
+  .wrap img{height: 15px;}
+  .wrap{padding: 1px 7px;}
+  .wrap.pause{padding: 5px 9px;}
+  .next-prev-play{margin: 0 20px;}
+  .play-pause{margin-bottom: 25px;}
+  input[type="range"]{height: 6px;margin: 0 auto 8px 5px;}
+  .progress-bar{height: 10px;}
+  }
+  @media screen and (max-width: 499px) {
+  .song-wrap .song-banner img{width: 100%;}
+  .song-wrap .song-details{padding-left: 0;margin-top: 50px;}
+  .song-details-text{margin: 20px 0;}
+  
+}
